@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators, FormControl } from '@angular/forms';
 import { UserService } from 'src/app/user.service';
 
 @Component({
@@ -8,7 +8,7 @@ import { UserService } from 'src/app/user.service';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent {
-  form!: FormGroup;
+  formgroup!: FormGroup;
   loading = false;
   submitted = false;
 
@@ -20,31 +20,27 @@ export class LoginComponent {
   constructor(
     private formBuilder: FormBuilder,
     private userService: UserService
-) { }
+  ) { }
 
-ngOnInit(): void {
-  this.login();
-
-}
-
-
-  onSubmit(): void{
-    //this.userService.getUser().subscribe(data =>{
-      //alert(data.toString());
-      //console.log(data)
-    //})
+  ngOnInit(): void {
+    //this.login();
+    this.formgroup = new FormGroup({ 
+      email: new FormControl("email"),
+      password: new FormControl("password")
+    });
   }
 
-  login(): void{
-    var val = {
+
+  onSubmit(data: any){
+    var user = {
       
-      email:this.email,
-      password:this.password,
-      usertype: this.usertype
+      email:data.email,
+      password:data.password,
+    
     };
 
-    this.userService.createUser(val).subscribe(res =>{
-      console.log(val)
+    this.userService.login(user).subscribe(res =>{
+      console.log(user)
     })
 
 

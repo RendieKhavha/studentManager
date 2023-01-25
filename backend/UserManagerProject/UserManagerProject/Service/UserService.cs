@@ -76,7 +76,7 @@ namespace UserManagerProject.Service
 
                 using (SqlCommand command = new SqlCommand("UPDATE [User] SET fisrtname = @firstname,lastname = @lastname, Email = @Email WHERE ID = @ID", sqlConnection))
                 {
-                    command.Parameters.AddWithValue("@firstname", "Lesiba");
+                    command.Parameters.AddWithValue("@firstname", "Rendie");
                     //command.Parameters.AddWithValue("@Name", lastname); 
                     //command.Parameters.AddWithValue("@Email", email);
                     command.Parameters.AddWithValue("@ID", id);

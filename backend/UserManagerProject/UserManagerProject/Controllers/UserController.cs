@@ -24,6 +24,13 @@ namespace UserManagerProject.Controllers
             return userService.Read(id);
         }
 
+        [HttpPost("login")]
+        public IActionResult Login(UserLogin u)
+        {
+            var user = u;
+            return Ok();
+        }
+
         [HttpPut]
         public void Update(int id)
         {
