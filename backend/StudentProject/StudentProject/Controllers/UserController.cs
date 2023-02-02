@@ -1,8 +1,8 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using UserManagerProject.Entity;
-using UserManagerProject.Service;
+using StudentProject.Entity;
+using StudentProject.Service;
 
-namespace UserManagerProject.Controllers
+namespace StudentProject.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
@@ -37,7 +37,6 @@ namespace UserManagerProject.Controllers
             userService.Delete(id);
 
         }
+
     }
-
 }
-

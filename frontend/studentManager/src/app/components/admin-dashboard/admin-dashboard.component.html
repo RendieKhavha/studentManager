@@ -1,1 +1,145 @@
-<p>admin-dashboard works!</p>
+
+ <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Users</a></li>
+        
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1>Welcome to the Admin Dashboard</h1>
+      
+    </main>
+  </body>
+<body>
+    <div id="dashboard">
+      <h2>Dashboard</h2>
+      <select>
+        <option value="recent-activity">view all Users</option>
+        <option value="most-visited-pages">View all Students</option>
+     
+      </select>
+      <div id="chart">
+        <!-- Chart will be displayed here -->
+        <table class="table align-middle mb-0 bg-white">
+            <thead class="bg-light">
+              <tr>
+                <th>First Name</th>
+                <th>Last Title</th>
+                <th>Email Address</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                        src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                        alt=""
+                        style="width: 45px; height: 45px"
+                        class="rounded-circle"
+                        />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">John Doe</p>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Software engineer</p>
+                  <p class="text-muted mb-0">IT department</p>
+                </td>
+                <td>
+                  <span class="badge badge-success rounded-pill d-inline">Active</span>
+                </td>
+                <td>Senior</td>
+                <td>
+                  <button type="button" class="btn btn-link btn-sm btn-rounded">
+                    Edit
+
+                  </button>
+                  <button type="button" class="btn btn-link btn-sm btn-rounded">
+                    Delete
+                    
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                        src="https://mdbootstrap.com/img/new/avatars/6.jpg"
+                        class="rounded-circle"
+                        alt=""
+                        style="width: 45px; height: 45px"
+                        />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Alex Ray</p>
+                    
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Consultant</p>
+                  <p class="text-muted mb-0">Finance</p>
+                </td>
+                <td>
+                  <span class="badge badge-primary rounded-pill d-inline"
+                        >Onboarding</span
+                    >
+                </td>
+                <td>Junior</td>
+                <td>
+                  <button
+                          type="button"
+                          class="btn btn-link btn-rounded btn-sm fw-bold"
+                          mdbRipple rippleColor="dark"
+                          >
+                    Edit
+                  </button>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <div class="d-flex align-items-center">
+                    <img
+                        src="https://mdbootstrap.com/img/new/avatars/7.jpg"
+                        class="rounded-circle"
+                        alt=""
+                        style="width: 45px; height: 45px"
+                        />
+                    <div class="ms-3">
+                      <p class="fw-bold mb-1">Kate Hunington</p>
+                      
+                    </div>
+                  </div>
+                </td>
+                <td>
+                  <p class="fw-normal mb-1">Designer</p>
+                  <p class="text-muted mb-0">UI/UX</p>
+                </td>
+                <td>
+                  <span class="badge badge-warning rounded-pill d-inline">Awaiting</span>
+                </td>
+                <td>Senior</td>
+                <td>
+                  <button
+                          type="button"
+                          class="btn btn-link btn-rounded btn-sm fw-bold"
+                          mdbRipple rippleColor="dark"
+                          >
+                    Edit
+                  </button>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+      </div>
+    </div>
+  </body>
+  
